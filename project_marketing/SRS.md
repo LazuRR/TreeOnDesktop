@@ -1,3 +1,5 @@
+![logo](https://github.com/LazuRR/TreeOnDesktop/blob/master/project_marketing/logo/moc6.jpg) <br/>
+
 # Требования к проекту
 
 ### Содержание
@@ -44,19 +46,19 @@
 
 Главная страница сайта будет представлять собой краткий обзор на город, из которого можно будет получить текущее время, ближайшие авиаперелеты и сводку полезной информации:
 
-![Превью_Москва](https://github.com/LazuRR/TreeOnDesktop/blob/master/src/mockups/Mockup_Moscow.png) <br/>
+![Превью_Москва](https://github.com/LazuRR/TreeOnDesktop/blob/master/project_marketing/mockups/Mockup_Moscow.png) <br/>
 
 Пролистав ниже, посетитель увидит расписание рейсов до пункта назанчения и свежие предложения брони отелей:
 
-![Превью_Москва_Advanced](https://github.com/LazuRR/TreeOnDesktop/blob/master/src/mockups/Mockup_Moscow_extended.png) <br/>
+![Превью_Москва_Advanced](https://github.com/LazuRR/TreeOnDesktop/blob/master/project_marketing/mockups/Mockup_Moscow_extended.png) <br/>
 
 В зависимости от погоды в городе будет меняться общий цветовой фон приложения. От даты и времени будет обновляться сводка полезных новостей.
 
-![Превью_Лондон](https://github.com/LazuRR/TreeOnDesktop/blob/master/src/mockups/Mockup_London_v2.png) <br/>
+![Превью_Лондон](https://github.com/LazuRR/TreeOnDesktop/blob/master/project_marketing/mockups/Mockup_London_v2.png) <br/>
 
 Сводка о каждом новом городе будет представлена в новой цветовой палитре, уникальной для каждого мегаполиса.
 
-![Превью_Пекин](https://github.com/LazuRR/TreeOnDesktop/blob/master/src/mockups/Mockup_Beijing_v2.png) <br/>
+![Превью_Пекин](https://github.com/LazuRR/TreeOnDesktop/blob/master/project_marketing/mockups/Mockup_Beijing_v2.png) <br/>
 
 
 ### 2.3. Кому можно смотреть, а кому - нет <a name="2.3"></a>
