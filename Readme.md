@@ -7,7 +7,7 @@
       - [Package Control](#package-control)
       - [Manual Installation](#manual-installation)
   - [Features](#features)
-      - [Markdown features](#markdown-features)
+      - [Markdown feature[](link)s](#markdown-features)
       - [Wiki features](#wiki-features)
   - [Key Bindings](#key-bindings)
   - [GFM Specific Features](#gfm-specific-features)
