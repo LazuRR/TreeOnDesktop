@@ -48,7 +48,7 @@
 
 Пролистав ниже, посетитель увидит расписание рейсов до пункта назанчения и свежие предложения брони отелей:
 
-![Превью_Москва_Advanced](https://github.com/LazuRR/TreeOnDesktop/blob/master/src/mockups/Mockup_Moscow_extended.png) <br\>
+![Превью_Москва_Advanced](https://github.com/LazuRR/TreeOnDesktop/blob/master/src/mockups/Mockup_Moscow_extended.png) <br/>
 
 В зависимости от погоды в городе будет меняться общий цветовой фон приложения. От даты и времени будет обновляться сводка полезных новостей.
 
