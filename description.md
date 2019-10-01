@@ -52,7 +52,7 @@
 
 В зависимости от погоды в городе будет меняться общий цветовой фон приложения. От даты и времени будет обновляться сводка полезных новостей.
 
-![Превью_Лондон](https://github.com/LazuRR/TreeOnDesktop/blob/master/src/mockups/Mockup_Beijing_v2.png) <br/>
+![Превью_Лондон](https://github.com/LazuRR/TreeOnDesktop/blob/master/src/mockups/Mockup_London_v2.png) <br/>
 
 Сводка о каждом новом городе будет представлена в новой цветовой палитре, уникальной для каждого мегаполиса.
 
