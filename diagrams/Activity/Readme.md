@@ -4,7 +4,7 @@
 ![logo](https://github.com/LazuRR/TreeOnDesktop/blob/master/project_marketing/logo/logo.png) <br/>
 
 ## Содержание
-1. [Просмотр сайта]
+### 1. Просмотр сайта
 
 Данная диаграмма активности предлагает подробное рассмотрения захода и использования сайта Modtravel.com.
 
