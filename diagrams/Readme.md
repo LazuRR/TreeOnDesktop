@@ -90,9 +90,9 @@ Git|Ссылка на активный Гит проекта
 Поток выполнения:
 1. Молодой путешественник нажимает на значок гита и лицезреет увиденную вакханалию диграмм, мокапов, зарисовочек и кода.
 
-### 2. Диаграмма активности<a name="2"></a>
+### 2. [Диаграмма активности](https://github.com/LazuRR/TreeOnDesktop/tree/master/diagrams/Activity)<a name="2"></a>
  ![Диаграммы агтивности](https://github.com/LazuRR/TreeOnDesktop/blob/master/diagrams/Activity/Activity%20Diagram.png)
-### 3. Диаграмма последовательности<a name="3"></a>
+### 3. [Диаграмма последовательности](https://github.com/LazuRR/TreeOnDesktop/tree/master/diagrams/Sequence)<a name="3"></a>
 ![Диаграммы последовательности](https://github.com/LazuRR/TreeOnDesktop/blob/master/diagrams/Sequence/Sequence%20Diagram.png)
 
 
