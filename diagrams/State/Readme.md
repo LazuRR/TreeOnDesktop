@@ -3,6 +3,9 @@
 
 ![logo](https://github.com/LazuRR/TreeOnDesktop/blob/master/project_marketing/logo/logo.png) <br/>
 
-1.[SRS](https://github.com/LazuRR/TreeOnDesktop/blob/master/project_marketing/SRS.md)<br/>
-2.[Mockups](https://github.com/LazuRR/TreeOnDesktop/tree/master/project_marketing/mockups)<br/>
-3.[Diagrams](https://github.com/LazuRR/TreeOnDesktop/tree/master/diagrams)
+## 1. Main window state diagram</a>
+![Main window state diagram](https://github.com/LazuRR/TreeOnDesktop/blob/master/diagrams/State/State.png) <br/>
+## 2. Scroll state diagram</a>
+![Scroll state diagram](https://github.com/LazuRR/TreeOnDesktop/blob/master/diagrams/State/State%20scroll.png) <br/>
+## 3. API window state diagram</a>
+![API window state diagram](https://github.com/LazuRR/TreeOnDesktop/blob/master/diagrams/State/State%20api%20window.png) <br/>
