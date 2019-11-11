@@ -94,5 +94,10 @@ Git|Ссылка на активный Гит проекта
  ![Диаграммы агтивности](https://github.com/LazuRR/TreeOnDesktop/blob/master/diagrams/Activity/Activity%20Diagram.png)
 ### 3. [Диаграмма последовательности](https://github.com/LazuRR/TreeOnDesktop/tree/master/diagrams/Sequence)<a name="3"></a>
 ![Диаграммы последовательности](https://github.com/LazuRR/TreeOnDesktop/blob/master/diagrams/Sequence/Sequence%20Diagram.png)
-
+### 4. [Диаграмма состояний](https://github.com/LazuRR/TreeOnDesktop/tree/master/diagrams/State)<a name="3"></a>
+![Диаграммы состояний](https://github.com/LazuRR/TreeOnDesktop/blob/master/diagrams/State/State.png)
+### 5. [Диаграмма классов](https://github.com/LazuRR/TreeOnDesktop/tree/master/diagrams/State)<a name="3"></a>
+![Диаграммы состояний](https://github.com/LazuRR/TreeOnDesktop/blob/master/diagrams/State/State.png)
+### 4. [Диаграмма развертывания](https://github.com/LazuRR/TreeOnDesktop/tree/master/diagrams/Deployment)<a name="3"></a>
+![Диаграммы состояний](https://github.com/LazuRR/TreeOnDesktop/blob/master/diagrams/Deployment/DemploymentDia1.png)
 
