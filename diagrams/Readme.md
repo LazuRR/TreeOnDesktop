@@ -19,6 +19,12 @@
 1.2.1.6 [Перейти по ссылке на Git проекта](#1.2.1.6)<br>
 2. [Диаграмма активности](#2)
 3. [Диаграмма последовательности](#3)
+4. [Диаграмма состояний](#4)
+5. [Диаграмма классов](#5)
+5.1 [Класс Container](#5.1)<br>
+5.2 [Класс Fontawesome](#5.2)<br>
+5.3 [Класс Row](#5.3)<br>
+5. [Диаграмма развертывания](#6)
 
 ## 1. Диаграмма прецедентов<a name="1"></a>
 Диаграмма прецедентов представляет собой следующую диаграмму: 
@@ -94,10 +100,18 @@ Git|Ссылка на активный Гит проекта
  ![Диаграммы агтивности](https://github.com/LazuRR/TreeOnDesktop/blob/master/diagrams/Activity/Activity%20Diagram.png)
 ### 3. [Диаграмма последовательности](https://github.com/LazuRR/TreeOnDesktop/tree/master/diagrams/Sequence)<a name="3"></a>
 ![Диаграммы последовательности](https://github.com/LazuRR/TreeOnDesktop/blob/master/diagrams/Sequence/Sequence%20Diagram.png)
-### 4. [Диаграмма состояний](https://github.com/LazuRR/TreeOnDesktop/tree/master/diagrams/State)<a name="3"></a>
+### 4. [Диаграмма состояний](https://github.com/LazuRR/TreeOnDesktop/tree/master/diagrams/State)<a name="4"></a>
 ![Диаграммы состояний](https://github.com/LazuRR/TreeOnDesktop/blob/master/diagrams/State/State.png)
-### 5. [Диаграмма классов](https://github.com/LazuRR/TreeOnDesktop/tree/master/diagrams/State)<a name="3"></a>
-![Диаграммы состояний](https://github.com/LazuRR/TreeOnDesktop/blob/master/diagrams/State/State.png)
-### 4. [Диаграмма развертывания](https://github.com/LazuRR/TreeOnDesktop/tree/master/diagrams/Deployment)<a name="3"></a>
+### 5. [Диаграмма классов](https://github.com/LazuRR/TreeOnDesktop/tree/master/diagrams/State)<a name="5"></a>
+![Диаграммы состояний](https://github.com/LazuRR/TreeOnDesktop/blob/master/diagrams/Class/Class%20Diagram1.png)
+**Описание.** Диаграмма классов представлена основным классом <b>index</b>, который применяет свойства <b>CSS</b> к описанным блокам из классов <b>Row</b>,<b>Container</b> и <b>FontsAwesome</b>.
+#### 5.1 Класс Container<a name="5.1"></a>
+**Описание.** Содержит в себе конструктор для создания Upper-header'a, Down-header'a и Footer'a страницы сайта. 
+#### 5.2 Класс FontAwesome<a name="5.2"></a>
+**Описание.** Используется для создания FontAwesome полей, полученных из подключенной библиотеки bootstrap и сайта ![fontawesome](https://fontawesome.com/).
+#### 5.3 Класс Row<a name="5.3"></a>
+**Описание.** Содержит в себе так называемую <q>коробку</q> для элементов сайта, которая позволяет разнообразить расположение информационных окон на странице.
+
+### 6. [Диаграмма развертывания](https://github.com/LazuRR/TreeOnDesktop/tree/master/diagrams/Deployment)<a name="6"></a>
 ![Диаграммы состояний](https://github.com/LazuRR/TreeOnDesktop/blob/master/diagrams/Deployment/DemploymentDia1.png)
 
