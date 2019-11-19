@@ -1,41 +1,36 @@
-const app = document.getElementById('root');
+$(document).ready(function () {
 
-const logo = document.createElement('img');
-logo.src = 'logo.png';
+    // Get Location 
+    navigator.geolocation.getCurrentPosition(success, error);
 
-const container = document.createElement('div');
-container.setAttribute('class', 'container');
+    function success(pos) {
+      var lat = pos.coords.latitude;
+      var long = pos.coords.longitude;
+      weather(lat, long);
+    }
 
-app.appendChild(logo);
-app.appendChild(container);
+    function error() {
+      console.log('There was an error');
+    }
 
-var request = new XMLHttpRequest();
-request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
-request.onload = function () {
+    // Call Weather
+    function weather(lat, long) {
+      var URL = 'http://maps.openweathermap.org/maps/2.0/weather/TA2/{z}/{x}/{y}?date=1527811200&opacity=0.9&fill_bound=true&appid=68bebcc7bc23207ab063d92d18e2323f'
+      $.getJSON(URL, function(data) {
+        updateDOM(data);
+      });
+    }
 
-  // Begin accessing JSON data here
-  var data = JSON.parse(this.response);
-  if (request.status >= 200 && request.status < 400) {
-    data.forEach(movie => {
-      const card = document.createElement('div');
-      card.setAttribute('class', 'card');
+    // Update Dom
+    function updateDOM(data) {
+      var city = data.name;
+      var temp = Math.round(data.main.temp_max);
+      var desc = data.weather[0].description;
+      var icon = data.weather[0].icon;
 
-      const h1 = document.createElement('h1');
-      h1.textContent = movie.title;
-
-      const p = document.createElement('p');
-      movie.description = movie.description.substring(0, 300);
-      p.textContent = `${movie.description}...`;
-
-      container.appendChild(card);
-      card.appendChild(h1);
-      card.appendChild(p);
-    });
-  } else {
-    const errorMessage = document.createElement('marquee');
-    errorMessage.textContent = `Gah, it's not workingl!`;
-    app.appendChild(errorMessage);
-  }
-}
-
-request.send();
+      $('#city').html(city);
+      $('#temp').html(temp);
+      $('#desc').html(desc);
+      $('#icon').attr('src', icon);
+    }
+  });
