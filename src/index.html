@@ -1,140 +1,330 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <!-- Place your kit's code here -->
-  <script src="https://kit.fontawesome.com/e53915eabb.js" crossorigin="anonymous"></script>
-  <!-- Кодировка документа -->
-  <meta charset="utf-8">
-  <!-- Заголовок страницы -->
-  <title>Moodtravel</title>
-  <!-- Подключения таблицы стилей Bootstrap 3 -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <!-- Подключение темы со стилями Bootstrap 3 -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-  <!-- Подключение таблицы стилей иконок Awesome -->
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-  <!-- Подключение таблицы стилей, в которой будем прописывать свои стили -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- Подключение библиотеки jQuery для работы скриптов Bootstrap 3 -->
-  <script src="js/jquery-1.11.1.min.js"></script>
-  <!-- Подключение скриптов Bootstrap 3 -->
-  <script src="js/bootstrap.min.js"></script>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MoodTravel</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background-image: linear-gradient(to bottom, #255869, #3c6d7f, #538495, #6a9aac, #81b2c3, #7faebe, #7daaba, #7ba6b5, #608694, #456874, #2c4b56, #143039);">
+<header>
 
-  <!-- Основной контейнер -->
-  <div class="container">
-    <!-- "Шапка" сайта -->
-    <header style="padding-top:5px;">
-     <div id="logo" width="50%" style="border: solid;background-color: #255869;" >
-      <img src="img/moc6.png" width="12%"height = "12%" style="">
-      <div id="contacts" style="float:right;margin-top:23px;padding-right: 10px;display: flex;" >
-        <a href="https://www.onliner.by/"style="padding-right: 5px">
-          <i class="fas fa-envelope" style="color:white;display: flex;"></i></a>
-          <a href="https://github.com/LazuRR">
-           <i class="fab fa-github"style="color: white;display: flex;"></i></a>	
-         </div>
-       </div>
-       <div class="clearfix"></div>
-     </header>
-     <!-- Навигационное меню -->
-     <nav class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-menu">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-menu">
-        <ul class="nav navbar-nav">
-          <!-- Активный пункт меню "Главная" -->
-          <li class="active"><a href="#">Город</a></li>
-          <!-- Пункт меню "О компании" -->
-          <li><a href="#main">Что в нём?</a></li>
-          <!-- Пункт меню "Наш метод" -->
-        </ul>
-      </div>
-    </nav>
-    <!-- Нижняя часть "шапки" сайта --> 
-    <div id="header-bottom" style="position:relative;">
-      <img src="img/back.jpg" style="width:100%;">
-      <div id="bannertext" style="position:absolute; top:5%; width:100%; text-align:center; color:white;">
-        <!-- Этот блок будет отображаться на устройствах со средним и большим размером экрана -->
-        <div class="hidden-xs">
-          <h1 style="color: #255869;">
-            Мы предлагаем<br />
-            <small style="color: #255869">
-              Быстрый поиск информации и билетов до крупных магаполисов<br\></small>
-             // <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-              <script>
-                function gettingJSON(){
-                  document.write("jquery loaded");
-                  $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=London&APPID=ee6596241130f193adf1ba90e625cc10",function(json){
-                    document.write(JSON.stringify(json));
-                  });
-                }
-             // </script>
-            </h1>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark blue scrolling-navbar">
+    <a class="navbar-brand" href="#"> <img src="img/logo.png" width="90" height="47"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#carousel">Main Page <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#stepper">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Opinions</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav nav-flex-icons">
+       <a class="nav-link" href="https://github.com/LazuRR" >
+        <i class="fab fa-github fa-lg white-text mr-md-2 mr-2 fa-1.8x"> </i>
+      </a>
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:mr.makar12@gmail.com">
+          <i class="fas fa-envelope fa-lg white-text mr-md-2 mr-2 fa-1.8x"> </i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"href="https://vk.com/lazy2213">
+          <i class="fab fa-vk fa-lg white-text mr-md-2 mr-2 fa-1.8x"> </i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</header>
+<!--Main Navigation-->
+
+<!--Main Layout-->
+
+
+<body >
+
+  <!-- Start your project here-->  
+  <main>
+    <div class="container " style="height:1300px;" id="carousel">
+      <div class="row mt-5 pt-5 ">
+       <!--Carousel Wrapper-->
+       <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators rounded-pill light-blue">
+          <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner " role="listbox">
+          <!--First slide-->
+          <div class="carousel-item active ">
+            <!-- Jumbotron -->
+            <div class="jumbotron text-center rounded mb-0 blue lighten-4" >
+
+              <!-- Title -->
+              <h4 class="card-title h4 pb-2 "><div class="d-inline-flex p-2 col-example  rounded mb-2"><strong>Beijin</strong></div></h4>
+
+              <!-- Card image -->
+              <div class="view overlay my-4">
+                <img src="img/Beijin.jpg" class="img-fluid" alt="">
+                <a href="#">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <h5 class="indigo-text h5 mb-4">Lorem</h5>
+
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis officia doloremque repellendus facere laudantium aspernatur, quam cupiditate sunt ipsam minus, laborum quas adipisci dolorum delectus totam debitis, necessitatibus assumenda laboriosam.</p>
+
+              <!-- Linkedin -->
+              <a class="fa-lg p-2 m-2 li-ic fa-3x"><i class="fas fa-sun blue-text"></i></a>
+              <!-- Twitter -->
+              <a class="fa-lg p-2 m-2 tw-ic fa-3x"><i class="fas fa-plane blue-text"></i></a>
+              <!-- Dribbble -->
+              <a class="fa-lg p-2 m-2 fb-ic fa-3x"><i class="fas fa-hotel blue-text"></i></a>
+
+            </div>
+            <!-- Jumbotron -->
           </div>
-          <!-- Этот блок будет отображаться только на устройствах с маленьким экраном -->
-          <div class="hidden-sm hidden-md hidden-lg">
-            <p class="lead" style="color: #255869">Быстрый поиск информации и билетов до крупных магаполисов</p>
+          <!--/First slide-->
+          <!--Second slide-->
+          <div class="carousel-item">
+           <div class="jumbotron text-center rounded mb-0" >
+
+              <!-- Title -->
+              <h4 class="card-title h4 pb-2 "><div class="d-inline-flex p-2 col-example  rounded mb-2"><strong>Moscow</strong></div></h4>
+
+              <!-- Card image -->
+              <div class="view overlay my-4">
+                <img src="img/Moscow.jpg" class="img-fluid" alt="">
+                <a href="#">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <h5 class="indigo-text h5 mb-4">Photography</h5>
+
+              <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+
+              <!-- Linkedin -->
+              <a class="fa-lg p-2 m-2 li-ic fa-3x"><i class="fas fa-sun blue-text"></i></a>
+              <!-- Twitter -->
+              <a class="fa-lg p-2 m-2 tw-ic fa-3x"><i class="fas fa-plane blue-text"></i></a>
+              <!-- Dribbble -->
+              <a class="fa-lg p-2 m-2 fb-ic fa-3x"><i class="fas fa-hotel blue-text"></i></a>
+
+            </div>
+            <!-- Jumbotron -->
           </div>
-          <!-- Кнопка "Бесплатная консультация" -->
-          <a class="btn btn-primary btn-lg">Начать</a>
+          <!--/Second slide-->
+          <!--Third slide-->
+          <div class="carousel-item">
+            <div class="jumbotron text-center rounded mb-0 blue lighten-4" >
+
+              <!-- Title -->
+              <h4 class="card-title h4 pb-2 "><div class="d-inline-flex p-2 col-example  rounded mb-2"><strong>London</strong></div></h4>
+
+              <!-- Card image -->
+              <div class="view overlay my-4">
+                <img src="img/London.jpg" class="img-fluid" alt="">
+                <a href="#">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <h5 class="indigo-text h5 mb-4">Photography</h5>
+
+              <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+
+              <!-- Linkedin -->
+              <a class="fa-lg p-2 m-2 li-ic fa-3x"><i class="fas fa-sun blue-text"></i></a>
+              <!-- Twitter -->
+              <a class="fa-lg p-2 m-2 tw-ic fa-3x"><i class="fas fa-plane blue-text"></i></a>
+              <!-- Dribbble -->
+              <a class="fa-lg p-2 m-2 fb-ic fa-3x"><i class="fas fa-hotel blue-text"></i></a>
+
+            </div>
+            <!-- Jumbotron -->
+          </div>
+          <!--/Third slide-->
         </div>
-      </div>   
-      <!-- Блок об услугах компании --> 
-
-
-<!--MAIN!-->
-
-
-
-  <div id="main">
-  <!-- Задаем новый ряд, с выравниванием текста внутри него по центру с помощью CSS свойства text-align -->
-  <div class="row" style="text-align:center;">
-    <!-- Создаём заголовок h2 с текстом "О компании" -->
-    <h2>О компании</h2>
-    <!-- Создаем более крупный размер шрифта по сравнению с остальным текстом с помощью класса Bootstrap 3 "lead" -->
-    <p class="lead">Наши основные услуги</p>
-    <!-- Создаем горизонтальную линию -->
-    <hr />
-    <!-- Создаем блок, состоящий из 4 колонок Bootstrap 3 -->
-    <div class="col-md-4">
-      <!-- Отображаем изображение img-1.png -->
-      <img src="images/img-1.png">
-      <!-- Создаём заголовок внутри колонки -->
-      <h3>Маркетинг Facebook</h3>
-      <!-- Абзац с текстом -->
-      <p>Facebook насчитывает более 1 миллиарда пользователей. Наша компания занимается изучением этой аудитории для продвижения Вашего бизнеса с помощью брендированных страниц и рекламы. Мы сделаем всё возможное для процветания Вашей компании.</p>
-    </div>
-    <div class="col-md-4">
-      <img src="images/img-2.png">
-      <h3>Создание страниц</h3>
-      <p>Facebook насчитывает более 1 миллиарда пользователей. Наша компания занимается изучением этой аудитории для продвижения Вашего бизнеса с помощью брендированных страниц и рекламы. Мы сделаем всё возможное для процветания Вашей компании.</p>
-    </div>
-    <div class="col-md-4">
-      <img src="images/img-3.png">
-      <h3>Управление рекламой</h3>
-      <p>Facebook насчитывает более 1 миллиарда пользователей. Наша компания занимается изучением этой аудитории для продвижения Вашего бизнеса с помощью брендированных страниц и рекламы. Мы сделаем всё возможное для процветания Вашей компании.</p>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+      </div>
+      <!--/.Carousel Wrapper-->
     </div>
   </div>
+  <!-- Vertical Steppers -->
+<div class="row mt-1">
+  <div class="col-md-12">
+
+    <!-- Stepers Wrapper -->
+    <ul class="stepper stepper-vertical">
+
+      <!-- First Step -->
+      <li class="completed">
+        <a href="#!">
+          <span class="circle">1</span>
+          <span class="label">First step</span>
+        </a>
+      </li>
+
+      <!-- Second Step -->
+      <li class="active">
+
+        <!--Section Title -->
+        <a href="#!">
+          <span class="circle">2</span>
+          <span class="label">Second step</span>
+        </a>
+
+        <!-- Section Description -->
+        <div class="step-content grey lighten-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cupiditate voluptate facere
+            iusto
+            quaerat
+            vitae excepturi, accusantium ut aliquam repellat atque nesciunt nostrum similique. Inventore
+            nostrum
+            ut,
+            nobis porro sapiente.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore error excepturi veniam nemo
+            repellendus, distinctio soluta vitae at sit saepe. Optio eaque quia excepturi adipisci pariatur
+            totam,
+            atque odit fugiat.</p>
+          <p>Deserunt voluptatem illum quae nisi soluta eum perferendis nesciunt asperiores tempore saepe
+            reiciendis,
+            vero quod a dolor corporis natus qui magni quas fuga rem excepturi laboriosam. Quisquam
+            expedita ab
+            fugiat.</p>
+        </div>
+      </li>
+
+      <!-- Third Step -->
+      <li class="warning">
+        <a href="#!">
+          <span class="circle"><i class="fas fa-exclamation"></i></span>
+          <span class="label">Third step</span>
+        </a>
+      </li>
+
+      <!-- Fourth Step -->
+      <li>
+        <a href="#!">
+          <span class="circle">4</span>
+          <span class="label">Fourth step</span>
+        </a>
+      </li>
+
+    </ul>
+    <!-- /.Stepers Wrapper -->
+
+  </div>
 </div>
-      <!-- Блок, содержащий информацию об основных методах компании --> 
-      <div id="method">
-        <div class="row"></div>
+
+<!-- Steppers Navigation -->
+<div class="row mt-1">
+  <div class="col-md-12 text-center">
+    <button class="btn btn-flat btn-sm">Cancel</button>
+    <button class="btn btn-primary btn-sm">Next</button>
+  </div>
+</div>
+<!-- /.Vertical Steppers -->
+<div class="text-center"><img src="img/Beijin.jpg" ></div>
+</main>
+<!-- End your project here-->
+
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript"></script>
+
+
+
+
+<!-- FOOTER -->
+<footer class="page-footer font-small blue darken-3 fixed-bottom" id="footer">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-0.6">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="vk-ic" href="https://vk.com/lazy2213">
+            <i class="fab fa-vk fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="github-ic" href="https://github.com/LazuRR" >
+            <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="steam-ic" href="https://steamcommunity.com/id/mr_makar12/">
+            <i class="fab fa-steam fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="mail-ic" href="mailto:mr.makar12@gmail.com">
+            <i class="fas fa-envelope fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic" href="https://www.instagram.com/m_lazurr/">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="gitlab-ic" href="https://gitlab.com/LazuRR">
+            <i class="fab fa-gitlab fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
       </div>
-      <!-- Блок, содержащий портфолио компании --> 
-      <div id="work">
-        <div class="row"></div>
-      </div>
+      <!-- Grid column -->
+
     </div>
-    <!-- Подвал сайта -->
-    <footer></footer> 
-  </body>
-  </html>
+    <!-- Grid row-->
+
+  </div>
+
+</footer>
+</body>
+</html>
