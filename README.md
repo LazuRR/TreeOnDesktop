@@ -3,3 +3,4 @@
 1.[SRS](https://github.com/LazuRR/TreeOnDesktop/blob/master/project_marketing/SRS.md)<br/>
 2.[Mockups](https://github.com/LazuRR/TreeOnDesktop/tree/master/project_marketing/mockups)<br/>
 3.[Diagrams](https://github.com/LazuRR/TreeOnDesktop/tree/master/diagrams)
+4.[Test Plan](https://github.com/LazuRR/TreeOnDesktop/issues/5)
