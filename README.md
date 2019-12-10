@@ -4,3 +4,4 @@
 2.[Mockups](https://github.com/LazuRR/TreeOnDesktop/tree/master/project_marketing/mockups)<br/>
 3.[Diagrams](https://github.com/LazuRR/TreeOnDesktop/tree/master/diagrams)<br/>
 4.[Test Plan](https://github.com/LazuRR/TreeOnDesktop/issues/5)<br/>
+5.[My Testing Plan](https://github.com/VRublevski/tritpo-project-courier-exchange/issues/2)<br/>
